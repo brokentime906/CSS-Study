@@ -1,0 +1,141 @@
+ul ol {
+  list-style: none;
+  list-style-type: none;
+}
+
+.menu {
+  display: flex;
+}
+.menu-item {
+  background: gold;
+  width: 25%;
+  transition: 0.5s;
+}
+
+.menu-item:hover {
+  background: crimson;
+  width: 35%;
+}
+
+.menu-link {
+  display: block;
+  padding: 1em;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+}
+.menu-link:hover {
+  color: white;
+}
+.search-form {
+  display: flex;
+  align-items: stretch;
+  height: 40px;
+}
+.search-form input[type="search"] {
+  flex: 1;
+  border: 0;
+  border-radius: 0.2em;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.search-form input[type="submit"] {
+  width: 4em;
+  border: 0;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  margin-right: 10px;
+  background: gold;
+}
+
+.info-list-item {
+  display: flex;
+  margin: 0.5em 0;
+}
+
+.info-list-item:before {
+  content: "😄";
+  margin-right: 0.5em;
+}
+
+.user-photo {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: gold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150%;
+  flex-shrink: 0;
+}
+.user-item {
+  display: flex;
+  align-items: stretch;
+}
+.message-item {
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog {
+  width: 50vw;
+  padding: 1.5em;
+  border-radius: 1em;
+  background: white;
+}
+
+.card-item {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  height: 0px;
+  padding-bottom: 60%;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-image img {
+  display: none;
+}
+
+.card-desc {
+  background: white;
+  padding: 1em;
+  flex-grow: 1;
+}
+
+@media (min-width: 600px) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-item {
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .card-item {
+    width: 33.333333%;
+  }
+}
